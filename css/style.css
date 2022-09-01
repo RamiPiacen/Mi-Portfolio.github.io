@@ -1,0 +1,99 @@
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+a:hover {
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/Fondo.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-position: center;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+  background-color: rgba(158, 255, 255, 0.15);
+}
+.headerContainer .ulHeader {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.headerContainer .ulHeader li {
+  width: 25%;
+  height: 100%;
+  transition: all 0.25s;
+  padding-top: 15px;
+}
+.headerContainer .ulHeader li:hover {
+  background-color: rgba(158, 255, 255, 0.55);
+}
+.headerContainer .ulHeader li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.headerContainer .ulHeader li a p {
+  font-size: 20px;
+  font-weight: bolder;
+  color: black;
+}
+
+.primeraSeccion {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  top: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.primeraSeccion .perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s;
+  margin: 0 auto;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px black;
+  text-shadow: 2px 2px 3px #50505094;
+}
+.primeraSeccion .perfil:hover {
+  transform: scale(1.04);
+  background-color: rgba(255, 255, 255, 0.75);
+  text-shadow: 2.5px 2.5px 5px #505050;
+}
+.primeraSeccion .perfil .img {
+  border-radius: 50%;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

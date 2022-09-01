@@ -1,0 +1,38 @@
+.headerContainer {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(15px);
+  background-color: rgba(158, 255, 255, 0.15);
+  .ulHeader {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    li {
+      width: 25%;
+      height: 100%;
+      transition: all 0.25s;
+      padding-top: 15px;
+      &:hover{
+        background-color: rgba(158, 255, 255, 0.55);
+      }
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        p {
+          font-size: 20px;
+          font-weight: bolder;
+          color: black;
+        }
+      }
+    }
+  }
+}
