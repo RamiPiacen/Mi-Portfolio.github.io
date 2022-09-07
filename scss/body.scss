@@ -5,9 +5,6 @@ a{
     text-decoration: none;
     color: black;
     transition: all 0.4s;
-        &:hover{
-            color: rgb(0, 0, 0);
-        }
 }
 body{
     margin: 0;
@@ -21,4 +18,13 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     background-position: center;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background-image: linear-gradient(to bottom, #21025b, #230265, #24036f, #250379, #250484, #1f2196, #1435a8, #0048b8, #0069c8, #0083c8, #009abf, #1caeb5);
+    border-radius: 1px solid black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(158, 255, 255, 0.55);
+    border-radius: 75px;
 }

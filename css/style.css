@@ -7,9 +7,6 @@ a {
   color: black;
   transition: all 0.4s;
 }
-a:hover {
-  color: black;
-}
 
 body {
   margin: 0;
@@ -23,6 +20,17 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-family: "Roboto", sans-serif;
   background-position: center;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-image: linear-gradient(to bottom, #21025b, #230265, #24036f, #250379, #250484, #1f2196, #1435a8, #0048b8, #0069c8, #0083c8, #009abf, #1caeb5);
+  border-radius: 1px solid black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(158, 255, 255, 0.55);
+  border-radius: 75px;
 }
 
 .headerContainer {
@@ -39,6 +47,7 @@ body {
   width: 100%;
   height: 100%;
   align-items: center;
+  padding-left: 0px;
 }
 .headerContainer .ulHeader li {
   width: 25%;
@@ -79,7 +88,7 @@ body {
   align-items: center;
   transition: all 0.25s;
   margin: 0 auto;
-  padding: 20px;
+  padding: 25px;
   backdrop-filter: blur(5px);
   background-color: rgba(240, 240, 240, 0.5);
   border-radius: 50px;
@@ -91,9 +100,58 @@ body {
   background-color: rgba(255, 255, 255, 0.75);
   text-shadow: 2.5px 2.5px 5px #505050;
 }
+.primeraSeccion .perfil .parrafoSec1 {
+  padding-left: 30px;
+}
+.primeraSeccion .perfil .parrafoSec1 h2 {
+  display: flex;
+  justify-content: center;
+}
+.primeraSeccion .perfil .parrafoSec1 .botonCV {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background-color: #009abf;
+  border-radius: 40px;
+  box-shadow: 0px 0px 10px black;
+  text-shadow: 2px 2px 3px #50505094;
+  color: black;
+}
 .primeraSeccion .perfil .img {
   border-radius: 50%;
-  padding: 30px;
+  box-shadow: 0px 0px 10px black;
+}
+
+.seccion2 {
+  width: 100%;
+  height: 100%;
+  padding: 10% 0px 0px 0px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seccion2 .proyectosContenedor {
+  backdrop-filter: blur(5px);
+  background-color: rgba(240, 240, 240, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.seccion2 .proyectosContenedor:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.seccion2 .proyectosContenedor .proyectos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.seccion2 .proyectosContenedor .proyectos h3 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
